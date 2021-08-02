@@ -49,6 +49,7 @@ Vue.use(VueVega);
 export default function Augur() {
   // AugurApp.store = store
   // Object.defineProperty(AugurApp, 'store', store);
+  console.log("Dev Mode: " + Vue.config.devtools);
 
   router.beforeEach((to: any, from: any, next: any) => {
     NProgress.start()
